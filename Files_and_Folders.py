@@ -3,8 +3,8 @@ Useful_Functions
 """
 
 def filelist(path, ext):
-    """creating a list of specific files in a folder"""
-    # path is the folder path and ext is the file extension.
+    """creating a list of files with a specific extension"""
+    # path is the folder path and ext is the file extension e.g. 'py'.
     from os import listdir
     file = [f for f in listdir(path) if f.endswith(ext)]
     file.sort()
