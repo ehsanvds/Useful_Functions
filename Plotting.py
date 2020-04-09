@@ -14,8 +14,8 @@ def multiplot(x1, y1, sample, vmin=None, vmax=None,
         plt.contourf(x1, y1, val, levels=101, vmin=vmin, vmax=vmax, cmap=cmap)
         
     textprop = {'fontsize':22, 'fontstyle':'italic', 'fontname':'serif'}
-    plt.xlim([-1.4,4.8])
-    plt.ylim([-1.6,1.6])
+    plt.xlim([min(x1),max(x1)])
+    plt.ylim([min(y1),max(y1)])
     plt.xlabel('x*', textprop)
     plt.ylabel('y*', textprop)
     plt.title(title, textprop)
